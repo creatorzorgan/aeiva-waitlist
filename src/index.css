@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-aeiva-navy: #0b2a55;
+  --color-aeiva-gold: #c89c3d;
+  --color-aeiva-ink: #102b49;
+  --color-aeiva-mist: #f7fafa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: #f7fafa;
+}
+
+.full-stage {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hero-video {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transform-origin: 78% 52%;
+  transform-style: preserve-3d;
+}
+
+.hero-perspective {
+  perspective: 1500px;
+  perspective-origin: 74% 50%;
+}
+
+.site-header {
+  padding-top: max(1rem, env(safe-area-inset-top));
+  padding-right: max(1.25rem, env(safe-area-inset-right));
+  padding-left: max(1.25rem, env(safe-area-inset-left));
+}
+
+.credibility-rail {
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+}
+
+.hero-safe-content {
+  padding-right: max(1.5rem, env(safe-area-inset-right));
+  padding-left: max(1.5rem, env(safe-area-inset-left));
+}
+
+.safe-page {
+  padding-top: max(7rem, calc(env(safe-area-inset-top) + 5.75rem));
+  padding-right: max(1rem, env(safe-area-inset-right));
+  padding-left: max(1rem, env(safe-area-inset-left));
+}
+
+@media (min-width: 640px) {
+  .site-header {
+    padding-top: max(1.25rem, env(safe-area-inset-top));
+    padding-right: max(2rem, env(safe-area-inset-right));
+    padding-left: max(2rem, env(safe-area-inset-left));
+  }
+
+  .hero-safe-content {
+    padding-right: max(2rem, env(safe-area-inset-right));
+    padding-left: max(2rem, env(safe-area-inset-left));
+  }
+
+  .safe-page {
+    padding-top: max(8rem, calc(env(safe-area-inset-top) + 6.25rem));
+    padding-right: max(1.75rem, env(safe-area-inset-right));
+    padding-left: max(1.75rem, env(safe-area-inset-left));
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-header {
+    padding-right: max(2.5rem, env(safe-area-inset-right));
+    padding-left: max(2.5rem, env(safe-area-inset-left));
+  }
+
+  .hero-safe-content {
+    padding-right: max(2.5rem, env(safe-area-inset-right));
+    padding-left: max(2.5rem, env(safe-area-inset-left));
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 760px) {
+  .credibility-rail {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}

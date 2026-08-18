@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+*.local
+*.log
+
+# Internal source material and unused raw media are intentionally excluded
+# from the public website repository.
+/about aeiva/
+/assets/AEIVA FAVICON.jpeg
+/assets/AEIVA LOGO.jpeg
+/assets/Person-hero.mp4
+/assets/logo_aeiva_social-profile_20260818_navy.png
+/assets/logo_aeiva_social-profile_20260818_mist.png
+/assets/aeiva-tree-source.png

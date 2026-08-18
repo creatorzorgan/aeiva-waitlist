@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "project": {
+    "name": "join-aeiva",
+    "productType": "health intelligence waitlist landing page",
+    "stack": [
+      "react",
+      "tailwind-v4",
+      "vite"
+    ]
+  },
+  "sources": {
+    "tokens": [
+      "src/index.css"
+    ],
+    "components": [],
+    "assets": [
+      "assets"
+    ],
+    "instructions": []
+  },
+  "design": {
+    "colorMode": "light",
+    "colors": {
+      "--color-aeiva-navy": {
+        "value": "#0B2A55",
+        "source": "src/index.css"
+      },
+      "--color-aeiva-gold": {
+        "value": "#C89C3D",
+        "source": "src/index.css"
+      },
+      "--color-aeiva-ink": {
+        "value": "#102B49",
+        "source": "src/index.css"
+      },
+      "--color-aeiva-mist": {
+        "value": "#F7FAFA",
+        "source": "src/index.css"
+      }
+    },
+    "typography": {
+      "--font-sans": {
+        "value": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+        "source": "src/index.css"
+      }
+    },
+    "spacing": {},
+    "radius": {},
+    "shadows": {},
+    "motion": {},
+    "density": "airy"
+  },
+  "components": {
+    "installed": [],
+    "preferredPrimitives": [],
+    "patterns": []
+  },
+  "constraints": {
+    "must": [
+      "Use the gold Tree of Life icon on Aeiva mist in the header.",
+      "Use assets/aeiva-favicon.png as the only favicon source.",
+      "Keep the waitlist form disconnected until the user supplies its destination.",
+      "Respect reduced-motion preferences and preserve native sequential video playback on touch and desktop.",
+      "Collect only low-sensitivity product-research data: wearable, up to two focus areas, launch market, email, and optional name and beta interest.",
+      "Treat iPhone and iOS Safari as the primary mobile target, including safe-area insets, 44px-plus touch targets, native playsInline video, and no hover-dependent controls.",
+      "Present the Amsterdam address exactly as Science Park 608, 1098 XH Amsterdam, Netherlands and show the Netherlands-first, India-second launch order.",
+      "Keep third-party logos in their approved colors and proportions with accurate role labels."
+    ],
+    "avoid": [
+      "Do not claim a preview-form submission was stored.",
+      "Do not connect to the existing Baxter Labs waitlist endpoint.",
+      "Do not collect medical history, diagnoses, body measurements, date of birth, gender, or document uploads in the waitlist funnel.",
+      "Do not present a fabricated health score, eligibility result, queue position, scarcity claim, or referral reward.",
+      "Do not describe grant and program backers as equity investors or formal corporate partners unless that separate relationship is verified."
+    ]
+  },
+  "decisions": [
+    "Turn the Mainframe contact template into a conversion-focused Join Aeiva funnel using Aeiva navy and gold, the supplied brand lockup, a mist-light editorial canvas, and the existing humanoid media.",
+    "Use a three-stage journey: promise-led hero, progressive Clarity Profile, and a personalised value-and-expectations page.",
+    "Keep the Clarity Profile in an explicit preview state with client-side validation but no persistence or network request until a destination is supplied.",
+    "Use the original remote 4K humanoid video without a watermark overlay. Play it natively in sequence on every device and use a single requestAnimationFrame loop for desktop-only 3D cursor following, with translate3d, rotateX, rotateY, scale3d, and a separate lightweight aura. Never seek the single-keyframe source.",
+    "Keep iPhone playback native and transform-static, use 100svh with a fallback, respect safe-area insets, and place the credibility rail after the media rather than overlaying it on short or touch viewports.",
+    "The user confirmed official grants and support from Demonstrator Lab, Startup Village, Google for Startups, Cloudflare, Attio, and Wispr Flow. Present their self-hosted official marks as one Backed by group, qualified as Grants, programs & infrastructure supporting Aeiva, and preserve provenance in assets/partner-logos/SOURCES.md.",
+    "Capture UTM and referral context only inside first-party in-page analytics hooks; do not install a tracker or send data until consent and an analytics destination are supplied.",
+    "Present the launch markets consistently as Amsterdam first, followed by Chennai.",
+    "Use the quiet premium message spine: Your health, made clear; one clear action for today; personal, independent, and built for better decisions.",
+    "Use the off-white social-profile logo treatment in the website header and keep the user-selected favicon unchanged."
+  ],
+  "evidence": [
+    {
+      "fact": "design.colorMode:light",
+      "source": "src/index.css"
+    },
+    {
+      "fact": "design.tokens",
+      "source": "src/index.css"
+    },
+    {
+      "fact": "project.stack:react",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:tailwind-v4",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:vite",
+      "source": "package.json"
+    }
+  ],
+  "generatedAt": "2026-08-18T13:48:44.425Z"
+}
