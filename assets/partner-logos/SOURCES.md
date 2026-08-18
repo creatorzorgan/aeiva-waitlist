@@ -21,5 +21,3 @@ Do not relabel these marks as investors or equity partners without the
 corresponding written approval. The user confirmed that Aeiva has received
 official grants/support from the five organizations shown, so the UI uses “Backed by”
 with the qualifier “Grants, programs & infrastructure supporting Aeiva.”
-Wispr Flow is intentionally omitted: Aeiva won a hackathon connected to it, but
-the company did not otherwise support Aeiva.
